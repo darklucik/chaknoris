@@ -1,10 +1,10 @@
 let jokeBtn = document.getElementById('joke')
 
-jokeBtn.addEventListener('click', ChuckJoke)
+jokeBtn.addEventListener('click',  getChuckNorrisJoke)
 
 
 
-async function ChuckJoke() {
+async function  getChuckNorrisJoke() {
     try {
       const url = "https://api.chucknorris.io/jokes/random";
       const response = await fetch(url);
@@ -16,4 +16,4 @@ async function ChuckJoke() {
     }
   }
   
-  ChuckJoke();
+   getChuckNorrisJoke();
