@@ -2,8 +2,6 @@ let jokeBtn = document.getElementById('joke')
 
 jokeBtn.addEventListener('click',  getChuckNorrisJoke)
 
-
-
 async function  getChuckNorrisJoke() {
     try {
       const url = "https://api.chucknorris.io/jokes/random";
@@ -15,5 +13,5 @@ async function  getChuckNorrisJoke() {
       console.log("Ошибка:", error);
     }
   }
-  
+
    getChuckNorrisJoke();
